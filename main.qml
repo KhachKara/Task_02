@@ -1,6 +1,8 @@
 import QtQuick.Controls 2.12
 import QtQuick.Window 2.12
 import QtQuick 2.12
+import QtQuick.XmlListModel 2.12
+
 
 Window {
     width: 640
@@ -8,6 +10,14 @@ Window {
     visible: true
     title: qsTr("Task 02")
     property int cases: 8
+
+
+    Image {
+        id: checked
+        source: "checkbox.svg"
+        visible: true
+
+    }
 
 
     Row{

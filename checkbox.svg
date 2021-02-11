@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="checkbox.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 5.3891386 5.3891389"
+   height="20.368399"
+   width="20.368399">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     inkscape:window-maximized="1"
+     inkscape:window-y="32"
+     inkscape:window-x="-8"
+     inkscape:window-height="1017"
+     inkscape:window-width="1920"
+     fit-margin-bottom="0"
+     fit-margin-right="0"
+     fit-margin-left="0"
+     fit-margin-top="0"
+     units="px"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="9.9497179"
+     inkscape:cx="10.1842"
+     inkscape:zoom="40.60211"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(0.1945695,0.1945695)"
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <g
+       id="checked_group">
+      <rect
+         width="5"
+         height="5"
+         x="0"
+         y="0"
+         id="rect_checked"
+         style="fill:#ffffff;fill-opacity:1;stroke:#00c800;stroke-width:0.389139;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <g
+         id="cheked"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.60036px;line-height:1.25;font-family:Wingdings;-inkscape-font-specification:Wingdings;letter-spacing:0px;word-spacing:0px;fill:#808000;stroke-width:0.0700041">
+        <path
+           d="m 4.2583161,0.72254224 0.082037,0.14219664 Q 3.5391293,1.4307909 2.8554916,2.2976435 2.1718539,3.1644961 1.8683188,3.9957995 L 1.7479985,4.0751014 Q 1.5921291,4.1762798 1.4800126,4.2774582 1.4608707,4.1790144 1.3733651,3.9602503 L 1.3104704,3.8043809 Q 1.1053791,3.298489 0.96318248,3.0988668 0.82372039,2.8965101 0.65964734,2.8801028 0.88114595,2.677746 1.045219,2.677746 q 0.2269677,0 0.4976882,0.6098048 l 0.098444,0.2187641 Q 2.1253665,2.6394623 2.8090042,1.9093373 3.4953765,1.1792122 4.2583161,0.72254224 Z"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.60036px;font-family:'Wingdings 2';-inkscape-font-specification:'Wingdings 2, ';fill:#808000;stroke-width:0.0700041"
+           id="path13331" />
+      </g>
+    </g>
+  </g>
+</svg>
