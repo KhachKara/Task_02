@@ -9,16 +9,16 @@ Window {
     visible: true
     title: qsTr("Task 02")
     property int cases: 8
-    property int radioButton: 8
+    property int radioButton: 20
 
 
     function stateChanged2(ind, isChecked){
         if (isChecked){
             rep1.itemAt(ind).text = "Checkbox №: " + (ind + 1) + " - Unchecked"
-            rep2.itemAt(ind).diod.color = "green"
+            rep2.itemAt(ind).diod.color = "red"
         }else{
             rep1.itemAt(ind).text = "Checkbox №: " + (ind + 1) + " - Checked"
-            rep2.itemAt(ind).diod.color = "red"
+            rep2.itemAt(ind).diod.color = "lightgreen"
         }
     }
 
@@ -41,13 +41,12 @@ Window {
                     model: cases
                     Text {
                         id: txt1
-                        color: 'green'
+                        color: "green"
                         font.pixelSize: 18
                         text: "Checkbox №: " +
                               (index + 1) + " - Unchecked"
+                        visible: true
                     }
-
-
                 }
             }
         }
@@ -76,52 +75,27 @@ Window {
                             CheckBox {
                                 id: chb2
                                 text: "Checkbox " + (index + 1) + checked
-                                nextCheckState: function() {
-                                    if (checkState === Qt.Checked){
-                                        return Qt.Unchecked}
-                                    else{
-                                        return Qt.Checked}
-                                }
-
-
                                 onPressed: {
                                     stateChanged2(index, checkState === Qt.Checked)
                                 }
-
                             }
-                            Rectangle {
-                                id: _diod
-                                height: 10
-                                width: 10
-                                color: "yellow"
+                            Rectangle{
+                                width: radioButton
+                                height: width
+                                color: "black"
+                                radius: width * 0.5
                                 anchors.left: chb2.right
                                 anchors.verticalCenter: chb2.verticalCenter
-//                                width: radioButton
+                                Rectangle {
+                                    id: _diod
+                                    width: parent.width * 0.75
+                                    height: width
+                                    radius: width * 0.5
+                                    color: "red"
+                                    anchors.centerIn: parent
+                                }
                             }
                         }
-
-//                        Rectangle {
-//                            border.color: "black"
-//                            border.width: 1
-
-////                            anchors.horizontalCenter: chb2
-
-//                            id: gir  // GRAD/indicator_red
-//                            width: radioButton
-//                            height: width
-//                            radius: width * 0.5
-//                            color: "#21262B"
-//                            Rectangle{
-//                                id: centercyrcle
-//                                anchors.centerIn: parent
-//                                color: "#FF0000"
-//                                width: parent.width * 0.8
-//                                height: width
-//                                radius: width * 0.5
-
-//                            }
-
-//                        }
                     }
                 }
             }
