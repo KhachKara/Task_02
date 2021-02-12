@@ -72,4 +72,4 @@ Thumbs.db
 *.exe
 
 # --- MY ----
-/build-Task_02-Desktop_Qt_5_12_10_MinGW_64_bit-Debug
+/build-*/
