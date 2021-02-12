@@ -58,53 +58,64 @@ Window {
                     model: cases
                     Row{
                         spacing: 20
-                        CheckBox {
-                            id: chb2
-                            text: "Checkbox " + (index + 1) + checked
-                            nextCheckState: function() {
-                                if (checkState === Qt.Checked){
-                                    return Qt.Unchecked}
-                                else{
-                                    return Qt.Checked}
-                            }
-
-                            function stateChanged(ind, id){
-                                if (checkState === 0){
-                                    id.itemAt(index).text = "Checkbox №: " + (index + 1) + " - Checked"
-                                    centercyrcle.color = "#70FF00"
-                                }else{
-                                    id.itemAt(index).text = "Checkbox №: " + (index + 1) + " - Unchecked"
-                                    centercyrcle.color = "#FF0000"
+                        Item {
+                            height: 30
+                            width: 70
+                            CheckBox {
+                                id: chb2
+                                text: "Checkbox " + (index + 1) + checked
+                                nextCheckState: function() {
+                                    if (checkState === Qt.Checked){
+                                        return Qt.Unchecked}
+                                    else{
+                                        return Qt.Checked}
                                 }
-                            }
 
-                            onPressed: {
-                                stateChanged(index, rep1)
-                            }
+                                function stateChanged(ind, id){
+                                    if (checkState === 0){
+                                        id.itemAt(index).text = "Checkbox №: " + (index + 1) + " - Checked"
+                                        centercyrcle.color = "#70FF00"
+                                    }else{
+                                        id.itemAt(index).text = "Checkbox №: " + (index + 1) + " - Unchecked"
+                                        centercyrcle.color = "#FF0000"
+                                    }
+                                }
 
+                                onPressed: {
+                                    stateChanged(index, rep1)
+                                }
+
+                            }
+                            Diod {
+                                id: _diod
+                                anchors.left: chb2.right
+                                anchors.verticalCenter: chb2.verticalCenter
+                                width: radioButton
+                            }
                         }
-                        Rectangle {
-                            border.color: "black"
-                            border.width: 1
 
-//                            anchors.horizontalCenter: chb2
+//                        Rectangle {
+//                            border.color: "black"
+//                            border.width: 1
 
-                            id: gir  // GRAD/indicator_red
-                            width: radioButton
-                            height: width
-                            radius: width * 0.5
-                            color: "#21262B"
-                            Rectangle{
-                                id: centercyrcle
-                                anchors.centerIn: parent
-                                color: "#FF0000"
-                                width: parent.width * 0.8
-                                height: width
-                                radius: width * 0.5
+////                            anchors.horizontalCenter: chb2
 
-                            }
+//                            id: gir  // GRAD/indicator_red
+//                            width: radioButton
+//                            height: width
+//                            radius: width * 0.5
+//                            color: "#21262B"
+//                            Rectangle{
+//                                id: centercyrcle
+//                                anchors.centerIn: parent
+//                                color: "#FF0000"
+//                                width: parent.width * 0.8
+//                                height: width
+//                                radius: width * 0.5
 
-                        }
+//                            }
+
+//                        }
                     }
                 }
             }
