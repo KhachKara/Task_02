@@ -12,6 +12,16 @@ Window {
     property int radioButton: 8
 
 
+    function stateChanged2(ind, isChecked){
+        if (isChecked){
+            rep1.itemAt(ind).text = "Checkbox №: " + (ind + 1) + " - Unchecked"
+            rep2.itemAt(ind).diod.color = "green"
+        }else{
+            rep1.itemAt(ind).text = "Checkbox №: " + (ind + 1) + " - Checked"
+            rep2.itemAt(ind).diod.color = "red"
+        }
+    }
+
     Row{
         spacing: 20
         anchors.centerIn: parent
@@ -42,6 +52,7 @@ Window {
             }
         }
 
+
         Rectangle{
             id: rect2
             width: 300
@@ -57,6 +68,7 @@ Window {
                     id: rep2
                     model: cases
                     Row{
+                        property alias diod: _diod
                         spacing: 20
                         Item {
                             height: 30
@@ -71,26 +83,20 @@ Window {
                                         return Qt.Checked}
                                 }
 
-                                function stateChanged(ind, id){
-                                    if (checkState === 0){
-                                        id.itemAt(index).text = "Checkbox №: " + (index + 1) + " - Checked"
-                                        centercyrcle.color = "#70FF00"
-                                    }else{
-                                        id.itemAt(index).text = "Checkbox №: " + (index + 1) + " - Unchecked"
-                                        centercyrcle.color = "#FF0000"
-                                    }
-                                }
 
                                 onPressed: {
-                                    stateChanged(index, rep1)
+                                    stateChanged2(index, checkState === Qt.Checked)
                                 }
 
                             }
-                            Diod {
+                            Rectangle {
                                 id: _diod
+                                height: 10
+                                width: 10
+                                color: "yellow"
                                 anchors.left: chb2.right
                                 anchors.verticalCenter: chb2.verticalCenter
-                                width: radioButton
+//                                width: radioButton
                             }
                         }
 
