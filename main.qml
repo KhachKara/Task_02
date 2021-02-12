@@ -56,10 +56,6 @@ Window {
                     model: cases
                     CheckBox {
                         id: chb2
-                        text: "Checkbox " + (index + 1) + checked
-                        checkState: allChildrenChecked ? Qt.Checked :
-                                                         anyChildChecked ? Qt.PartiallyChecked : Qt.Unchecked
-
                         nextCheckState: function() {
                             if (checkState === Qt.Checked){
                                 return Qt.Unchecked}
