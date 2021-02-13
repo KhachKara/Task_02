@@ -15,10 +15,10 @@ Window {
     function stateChanged2(ind, isChecked){
         if (isChecked){
             rep1.itemAt(ind).text = "Checkbox №: " + (ind + 1) + " - Unchecked"
-            rep2.itemAt(ind).diod.color = "red"
+            rep2.itemAt(ind).diod.colorDiod = "red"
         }else{
             rep1.itemAt(ind).text = "Checkbox №: " + (ind + 1) + " - Checked"
-            rep2.itemAt(ind).diod.color = "lightgreen"
+            rep2.itemAt(ind).diod.colorDiod = "lightgreen"
         }
     }
 
@@ -79,21 +79,14 @@ Window {
                                     stateChanged2(index, checkState === Qt.Checked)
                                 }
                             }
-                            Rectangle{
+
+                            Diod{
+                                id: _diod
                                 width: radioButton
                                 height: width
-                                color: "black"
-                                radius: width * 0.5
                                 anchors.left: chb2.right
                                 anchors.verticalCenter: chb2.verticalCenter
-                                Rectangle {
-                                    id: _diod
-                                    width: parent.width * 0.75
-                                    height: width
-                                    radius: width * 0.5
-                                    color: "red"
-                                    anchors.centerIn: parent
-                                }
+                                visible: true
                             }
                         }
                     }

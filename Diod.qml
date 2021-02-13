@@ -6,7 +6,6 @@ Item {
     property var colorDiod: "red"
     Rectangle {
         anchors.fill: parent
-
         width: radioButton
         height: width
         radius: width * 0.5
