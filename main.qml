@@ -9,8 +9,7 @@ Window {
     height: 480
     visible: true
     title: qsTr("Task 02")
-    property int cases: 8
-    property int radioButton: 20
+    property int cases: 8  // количество повторений
 
 
     function stateChanged2(ind, isChecked){
@@ -75,7 +74,7 @@ Window {
 
                             Diod{
                                 id: _diod
-                                width: radioButton
+                                width: sizeDiod
                                 height: width
                                 anchors.left: chb2.right
                                 anchors.verticalCenter: chb2.verticalCenter
