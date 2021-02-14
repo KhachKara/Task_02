@@ -1,9 +1,10 @@
 import QtQuick.Controls 2.12
 import QtQuick.Window 2.12
 import QtQuick 2.12
-//
+///
 
 Window {
+    id: root
     width: 640
     height: 480
     visible: true
@@ -25,13 +26,9 @@ Window {
     Row{
         spacing: 20
         anchors.centerIn: parent
-        Rectangle{
+        RectContainer{
             id: rect1
-            width: 300
-            height: 400
-            color: 'white'
-            border.color: "black"
-            border.width: 3
+            anchors.horizontalCenter: root.horizontalCenter
             Column{
                 id: col1
                 spacing: 26
@@ -51,14 +48,10 @@ Window {
             }
         }
 
-
-        Rectangle{
+        RectContainer{
             id: rect2
-            width: 300
-            height: 400
-            color: 'white'
-            border.color: "lightblue"
-            border.width: 3
+            anchors.horizontalCenter: root.horizontalCenter
+            border.color: "cyan"
             Column{
                 id: col2
                 spacing: 5

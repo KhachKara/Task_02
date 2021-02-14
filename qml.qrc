@@ -2,5 +2,6 @@
     <qresource prefix="/">
         <file>main.qml</file>
         <file>Diod.qml</file>
+        <file>RectContainer.qml</file>
     </qresource>
 </RCC>
