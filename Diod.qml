@@ -4,8 +4,11 @@ import QtQuick 2.12
 Item {
     id: root
     property var colorDiod: "red"  // цвет диода
-    property var colorBorder: "#21262B"  // цвет клнтура диода
+    property var colorBorder: "#21262B"  // цвет контура диода
     property int sizeDiod: 8  // размер диода
+
+    width: sizeDiod
+    height: sizeDiod
 
     Rectangle {
         anchors.fill: parent
