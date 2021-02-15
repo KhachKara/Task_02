@@ -4,7 +4,7 @@ import QtQuick 2.12
 Item {
     id: root
     property var colorDiod: "red"  // цвет диода
-    property string colorBorder  // цвет контура диода
+    property var colorBorder: "#21262B"  // цвет клнтура диода
     property int sizeDiod: 8  // размер диода
 
     Rectangle {
@@ -12,7 +12,7 @@ Item {
         width: sizeDiod
         height: width
         radius: width * 0.5
-        color: "#21262B"
+        color: colorBorder
         Rectangle{
             anchors.centerIn: parent
             color: colorDiod

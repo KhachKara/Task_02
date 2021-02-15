@@ -16,9 +16,11 @@ Window {
         if (isChecked){
             rep1.itemAt(ind).text = "Checkbox №: " + (ind + 1) + " - Unchecked"
             rep2.itemAt(ind).diod.colorDiod = "red"
+            rep2.itemAt(ind).diod.colorBorder = "#21262B"
         }else{
             rep1.itemAt(ind).text = "Checkbox №: " + (ind + 1) + " - Checked"
             rep2.itemAt(ind).diod.colorDiod = "lightgreen"
+            rep2.itemAt(ind).diod.colorBorder = "blue"
         }
     }
 
